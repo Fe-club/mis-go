@@ -1,0 +1,13 @@
+$fontColor: #555;
+
+@import "base";
+@import "../fonts/iconfont.css";
+@import "../imgs/icon.css";
+
+body {
+    background-color: skyblue;
+    color: $fontColor;
+}
+i[class^="icon-"] {
+    display: inline-block;
+}
