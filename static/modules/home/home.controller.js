@@ -1,9 +1,9 @@
 angular.module('controllers', []);
 angular.module('controllers').controller('homeCtrl',
-    ['$scope', 'httpService', function($scope, httpService){
+    ['$scope', 'HttpService', function($scope, HttpService){
         console.log('home');
 
-        httpService.get().then(function(data){
+        HttpService.get().then(function(data){
             console.log(data);
         });
     }]);

@@ -1,8 +1,9 @@
-angular.module('httpService', [])
-    .service('httpService', ['$http', function($http){
+angular.module('http.service', [])
+    .service('HttpService', ['$http', 'GlobalConfig', function($http, GlobalConfig){
         return {
             get: function(httpConfig){
                 var that = this;
+                console.log(GlobalConfig);
                 return that.http();
             },
             http: function(config){

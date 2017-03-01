@@ -48,5 +48,9 @@ git pull --rebase
 git push origin master
 ```
 [这里是工作中记录的常用命令](https://paddywang.gitbooks.io/workspace/content/git.html)
-### test commit
-  - first commit2017226.
+
+### 命名规则
+- 文件命名: 全小写 `e.g: http.service.js`
+- 模块命名: 全小写 `e.g: stutas.code`
+- 服务命名: 大驼峰 `e.g: ApiService`
+- 
