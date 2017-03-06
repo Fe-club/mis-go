@@ -53,4 +53,3 @@ git push origin master
 - 文件命名: 全小写 `e.g: http.service.js`
 - 模块命名: 全小写 `e.g: stutas.code`
 - 服务命名: 大驼峰 `e.g: ApiService`
-- 
