@@ -42,6 +42,7 @@ angular.module('config')
                     });
                 }
             });
+            delete that.init;
             return that;
         }
     }.init());
