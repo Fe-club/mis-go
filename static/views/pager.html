@@ -1,0 +1,69 @@
+<style>
+    /* ================= 分页器 start ================= */
+    .pager {
+        width: 100%;
+        height: 32px;
+        min-width: 870px;
+    }
+    .pager ::selection {
+        background-color: transparent;
+    }
+    .pager input::selection {
+        background-color: #cce2fe;
+    }
+    .pager .current::selection,
+    .pager p::selection {
+        color: #fff;
+    }
+    .pager > p,
+    .pager > span {
+        display: inline-block;
+        height: 100%;
+        margin-right: 8px;
+        padding: 0 12px;
+        border: 1px solid #999;
+        line-height: 32px;
+        cursor: pointer;
+    }
+    .pager > p {
+        color: #fff;
+        background-color: #01a1e8;
+    }
+    .pager > span {
+        min-width: 32px;
+        padding: 0;
+        text-align: center;
+        background-color: #51b7e4;
+    }
+    .pager > input {
+        width: 56px;
+        height: 30px;
+        border: 1px solid #999;
+        border-right: 0;
+        padding-left: 8px;
+        margin-left: 32px;
+        position: relative;
+        top: -3px;
+        left: 0;
+    }
+    .pager > .disabled::selection,
+    .pager > .disabled {
+        color: #333;
+        background-color: #fff;
+        cursor: not-allowed;
+    }
+    .pager > .current {
+        font-weight: bold;
+        color: #fff;
+        background-color: #01a1e8;
+    }
+    .pager span[data-tag=…] {
+        cursor: text;
+    }
+    /* ================= 分页器 end ================= */
+
+</style>
+<section>
+    <h3>分页器</h3>
+    <pager init="pagerInit"></pager>
+</section>

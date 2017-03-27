@@ -7,6 +7,13 @@ angular.module('controllers').controller('homeCtrl',
             gender: Mapping.gender
         };
 
+        $scope.slidingInit = {
+            success: function(){
+                console.log('sliding valid success!!!');
+                return true;
+            }
+        };
+
         HttpService.get().then(function(data){
             console.log(data);
         });

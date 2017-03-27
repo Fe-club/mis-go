@@ -11,5 +11,15 @@ angular.module('routers').config(['$stateProvider', function($stateProvider){
                 templateUrl: basePath + '/home.html'
             }
         }
+    })
+    .state({
+        name: 'pager',
+        url: '/pager',
+        views: {
+            'content': {
+                controller: 'pagerCtrl',
+                templateUrl: basePath + '/pager.html'
+            }
+        }
     });
 }]);
